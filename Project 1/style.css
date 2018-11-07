@@ -1,0 +1,105 @@
+
+
+body {
+	background-color: white;
+	border-top-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+
+}
+
+
+h1 {
+	font-family: verdana;
+	font-size: 50px;
+
+}
+
+
+h1 {
+	font-family: verdana;
+	font-size: 50px;
+
+}
+
+h2 {
+	font-family: verdana;
+	font-size: 10px;
+
+}
+
+p {
+	font-family: verdana;
+    font-size: 25px;
+    
+}
+
+
+div {
+	font-family: verdana;
+	font-size: 20px;
+}
+
+form {
+	font-family: verdana;
+	font-size: 15px;
+	border-style: dotted;}
+}
+
+
+.sidebar {
+  margin: 0;
+  padding: 10px;
+  width: 0px;
+  background-color: pink;
+  position: fixed;
+  height: 50%;
+  overflow: block;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: slateblue;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: pink;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: pink;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 100px;
+  padding: 1px 16px;
+  height: 600px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 50%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 50;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
